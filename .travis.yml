@@ -3,7 +3,7 @@ python:
   - "3.6"
 
 env:
-  - FLASK_APP="$TRAVIS_BUILD_DIR/autoapp.py"
+  - FLASK_APP="$TRAVIS_BUILD_DIR/escola.py"
 
 # command to install dependencies
 install:
