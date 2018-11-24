@@ -1,3 +1,5 @@
 .vscode
 escola.db
 **/__pycache__/**
+.coverage
+tmp/
