@@ -1,6 +1,7 @@
 # flask-template
 
-[![Build Status](https://travis-ci.com/ltaniguti/flask-template.svg?branch=master)](https://travis-ci.com/ltaniguti/flask-template)
+[![Build Status](https://travis-ci.com/ltaniguti/flask-template.svg?branch=master)](https://travis-ci.com/ltaniguti/flask-template) | [![codecov](https://codecov.io/gh/ltaniguti/flask-template/branch/master/graph/badge.svg)](https://codecov.io/gh/ltaniguti/flask-template)
+
 
 Application template using flask and JWT authentication.
 
