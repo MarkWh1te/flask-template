@@ -1,5 +1,7 @@
 # flask-template
 
+[![Build Status](https://travis-ci.com/ltaniguti/flask-template.svg?branch=master)](https://travis-ci.com/ltaniguti/flask-template)
+
 Application template using flask and JWT authentication.
 
 ## Quick start
