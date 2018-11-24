@@ -20,7 +20,9 @@ Interact with it
 curl -X POST \
      -d '{"email":"my@email.com", "password":"1234"}' \
      -H "Content-Type: application/json" http://localhost:5000/auth/register
-{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDMwNzc5MjcsImlhdCI6MTU0MzA3NzkyMiwic3ViIjoxfQ.dPmFuSx9diBHcWjWMWPc5hhNHOmxx3axSx8T9hjFNkk","message":"Successfully registered.","status":"success"}
+     
+# Output:
+# {"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDMwNzc5MjcsImlhdCI6MTU0MzA3NzkyMiwic3ViIjoxfQ.dPmFuSx9diBHcWjWMWPc5hhNHOmxx3axSx8T9hjFNkk","message":"Successfully registered.","status":"success"}
 
 # Login
 curl -X POST \
