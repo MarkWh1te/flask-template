@@ -1,6 +1,6 @@
 # flask-template
 
-[![Build Status](https://travis-ci.com/ltaniguti/flask-template.svg?branch=master)](https://travis-ci.com/ltaniguti/flask-template) | [![codecov](https://codecov.io/gh/ltaniguti/flask-template/branch/master/graph/badge.svg)](https://codecov.io/gh/ltaniguti/flask-template)
+[![Build Status](https://travis-ci.com/ltaniguti/flask-template.svg?branch=master)](https://travis-ci.com/ltaniguti/flask-template)  [![codecov](https://codecov.io/gh/ltaniguti/flask-template/branch/master/graph/badge.svg)](https://codecov.io/gh/ltaniguti/flask-template)  [![Maintainability](https://api.codeclimate.com/v1/badges/58781f4fb4ba514471f8/maintainability)](https://codeclimate.com/github/ltaniguti/flask-template/maintainability)
 
 
 Application template using flask and JWT authentication.
