@@ -10,7 +10,6 @@ from . import auth
 
 @auth.route("/register", methods=["POST"])
 def post():
-    # Aqui posso tratar o registro no model user e raise error caso jah exista.
     # get the post data
     post_data = request.get_json()
     # check if user already exists
