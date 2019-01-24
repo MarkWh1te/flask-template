@@ -25,16 +25,23 @@ def create_app(mode):
     return app
 
 
-
 class DevConf:
-    SQLALCHEMY_DATABASE_URI =  f'sqlite:///{os.getcwd()}/escola.db'
+    SQLALCHEMY_BINDS = {
+        'blacklist': f'sqlite:///{os.getcwd()}/token.db',
+        'users': f'sqlite:///{os.getcwd()}/users.db'
+    }
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = "blablabl"
+
 
 class TestConf:
-    SQLALCHEMY_DATABASE_URI = f'sqlite:///{os.getcwd()}/escola_test.db'
+    SQLALCHEMY_BINDS = {
+        'blacklist': f'sqlite:///{os.getcwd()}/token_test.db',
+        'users': f'sqlite:///{os.getcwd()}/users_test.db'
+    }
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = "blablabl"
+
 
 config = {
     "dev": DevConf,
