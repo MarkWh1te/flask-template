@@ -37,7 +37,7 @@ class DevConf:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = "blablabl"
     JWT_SECRET_KEY=SECRET_KEY
-    JWT_ACCESS_TOKEN_EXPIRES=datetime.timedelta(30)
+    JWT_ACCESS_TOKEN_EXPIRES=10 #datetime.timedelta(30)
 
 class TestConf:
     SQLALCHEMY_DATABASE_URI = f'sqlite:///{os.getcwd()}/escola_test.db'
