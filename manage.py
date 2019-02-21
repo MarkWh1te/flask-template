@@ -2,6 +2,7 @@ import sys
 import os
 import coverage
 from app import create_app
+from app.models.user import User
 COV = coverage.coverage(branch=True, include='app/*')
 COV.start()
 

@@ -8,7 +8,7 @@ class User(db.Model):
     email = db.Column(db.String(255), unique=True, nullable=False)
     password = db.Column(db.String(255), nullable=False)
     registered_on = db.Column(db.DateTime, nullable=False)
-    admin = db.Column(db.Boolean, nullable=False, default=False)
+    confirmed_mail = db.Column(db.Boolean, default=False)
 
 
     def __init__(self, email, password, admin=False):
@@ -21,3 +21,11 @@ class User(db.Model):
 
     def __repr__(self):
         return '<User %r>' % self.username
+
+    @staticmethod
+    def check_credentials(email, passwd):
+        user = User.query.filter_by(email=email).first()
+
+        if user and bcrypt.check_password_hash(user.password, passwd):
+            return True
+        return False
