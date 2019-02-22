@@ -3,3 +3,5 @@ escola.db
 **/__pycache__/**
 .coverage
 tmp/
+app/configurations/development.cfg
+app/configurations/testing.cfg
